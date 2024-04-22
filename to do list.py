@@ -48,6 +48,16 @@ my_entry.pack(pady=20)
 button_frame = Frame(root)
 button_frame.pack(pady= 20)
 
+#FUNCTIONS
+def delete_item():
+    pass
+def add_item():
+    pass
+def cross_off_item():
+    pass
+def uncross_item():
+    pass
+
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
 add_button = Button(button_frame, text="Add Item", command=add_item)
