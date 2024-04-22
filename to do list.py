@@ -58,12 +58,12 @@ def cross_off_item():
     #Cross off item
     my_list.itemconfig(my_list.curselection(), fg="dedede")
     #Get rid of selection bar entry
-my_list.selection_clear(0,End)
+my_list.selection_clear(0,END)
 def uncross_item():
     #Cross off item
     my_list.itemconfig(my_list.curselection(), fg="464646")
     #Get rid of selection bar entry
-my_list.selection_clear(0,End)
+my_list.selection_clear(0,END)
 
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
