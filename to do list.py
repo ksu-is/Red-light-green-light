@@ -14,7 +14,15 @@ my_frame = Frame(root)
 my_frame.pack(pady=10)
 
 #Create listbox
-my_list = Listbox(my_frame, font=my_font, width=25, height=5, bg="SystemButtonFace", bd=0, fg="#464646")
+my_list = Listbox(my_frame, font=my_font,
+                 width=25, 
+                 height=5,
+                 bg="SystemButtonFace",
+                 bd=0, 
+                 fg="#464646", 
+                 highlightthickness=0, 
+                 selectbackground="#a6a6a6",
+                 activestyle="none")
 
 my_list.pack()
 
