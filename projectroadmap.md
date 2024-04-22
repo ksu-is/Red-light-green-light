@@ -9,12 +9,13 @@
 
 # Sprint 2:
 
-- [] make small updates and commit messages in repository
-Complete 6 code chanes
--  [] 1 code change
--  [] 2 code change
--  [] 3 code change
--  [] 4 code change
--  [] 5 code change
--  [] 6 code change
-- [] each commit has a comment explaining what changed
+- [x] make small updates and commit messages in repository
+Complete 6 Code Changes
+  -  [x] 1 code change
+  -  [x] 2 code change
+  -  [x] 3 code change
+  -  [x] 4 code change
+  -  [x] 5 code change
+  -  [x] 6 code change
+- [x] each commit has a comment explaining what changed
+- [] Submit quiz
