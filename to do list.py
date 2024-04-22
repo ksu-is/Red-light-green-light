@@ -19,7 +19,7 @@ my_list = Listbox(my_frame, font=my_font,
                  height=5,
                  bg="SystemButtonFace",
                  bd=0, 
-                 fg="gray1", 
+                 fg="#000000", 
                  highlightthickness=0, 
                  selectbackground="#a6a6a6",
                  activestyle="none")
@@ -57,25 +57,33 @@ def add_item():
     my_entry.delete(0, END)
 def cross_off_item():
     #Cross off item
-    my_list.itemconfig(my_list.curselection(), fg="gray64")
+    my_list.itemconfig(my_list.curselection(), fg="#A3A3A3")
     #Get rid of selection bar entry
     my_list.selection_clear(0,END)
 def uncross_item():
     #Cross off item
-    my_list.itemconfig(my_list.curselection(), fg="gray1")
+    my_list.itemconfig(my_list.curselection(), fg="#000000")
     #Get rid of selection bar entry
     my_list.selection_clear(0,END)
+def delete_crossed():
+    count = 0
+    while count < my_list.size():
+        if my_list.itemcget(count, "fg") == "#A3A3A3":
+            my_list.delete(my_list.index(count))
+
+        count += 1
 
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
 add_button = Button(button_frame, text="Add Item", command=add_item)
 cross_off_button = Button(button_frame, text="Cross Off Item", command=cross_off_item)
 uncross_button = Button(button_frame, text="Uncross Item", command=uncross_item)
+delete_crossed_button = Button(button_frame, text="Delete Crossed", command=delete_crossed)
 
 delete_button.grid(row=0, column=0)
 add_button.grid(row=0, column=1, padx=20)
 cross_off_button.grid(row=0, column=2)
 uncross_button.grid(row=0, column=3, padx=20)
-
+delete_crossed_button.grid(row=1, column=0)
 
 root.mainloop()
