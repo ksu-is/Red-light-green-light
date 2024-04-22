@@ -19,7 +19,7 @@ my_list = Listbox(my_frame, font=my_font,
                  height=5,
                  bg="SystemButtonFace",
                  bd=0, 
-                 fg="#464646", 
+                 fg="gray1", 
                  highlightthickness=0, 
                  selectbackground="#a6a6a6",
                  activestyle="none")
@@ -48,6 +48,7 @@ my_entry.pack(pady=20)
 button_frame = Frame(root)
 button_frame.pack(pady= 20)
 
+
 #FUNCTIONS
 def delete_item():
     my_list.delete(ANCHOR)
@@ -56,14 +57,14 @@ def add_item():
     my_entry.delete(0, END)
 def cross_off_item():
     #Cross off item
-    my_list.itemconfig(my_list.curselection(), fg="dedede")
+    my_list.itemconfig(my_list.curselection(), fg="gray64")
     #Get rid of selection bar entry
-my_list.selection_clear(0,END)
+    my_list.selection_clear(0,END)
 def uncross_item():
     #Cross off item
-    my_list.itemconfig(my_list.curselection(), fg="464646")
+    my_list.itemconfig(my_list.curselection(), fg="gray1")
     #Get rid of selection bar entry
-my_list.selection_clear(0,END)
+    my_list.selection_clear(0,END)
 
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
