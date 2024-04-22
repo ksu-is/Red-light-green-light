@@ -50,13 +50,20 @@ button_frame.pack(pady= 20)
 
 #FUNCTIONS
 def delete_item():
-    pass
+    my_list.delete(ANCHOR)
 def add_item():
-    pass
+    my_list.insert(END, my_entry.get())
+    my_entry.delete(0, END)
 def cross_off_item():
-    pass
+    #Cross off item
+    my_list.itemconfig(my_list.curselection(), fg="dedede")
+    #Get rid of selection bar entry
+my_list.selection_clear(0,End)
 def uncross_item():
-    pass
+    #Cross off item
+    my_list.itemconfig(my_list.curselection(), fg="464646")
+    #Get rid of selection bar entry
+my_list.selection_clear(0,End)
 
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
