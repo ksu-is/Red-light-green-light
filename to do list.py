@@ -40,5 +40,24 @@ my_scrollbar.pack(side=RIGHT, fill=BOTH)
 my_list.config(yscrollcommand=my_scrollbar.set)
 my_scrollbar.config(command=my_list.yview)
 
+#create entry box to add items to the list
+my_entry = Entry(root, font=("Helvetica", 24))
+my_entry.pack(pady=20)
+
+#Create a button frame
+button_frame = Frame(root)
+button_frame.pack(pady= 20)
+
+#Add buttons to frame
+delete_button = Button(button_frame, text="Delete Item", command=delete_item)
+add_button = Button(button_frame, text="Add Item", command=add_item)
+cross_off_button = Button(button_frame, text="Cross Off Item", command=cross_off_item)
+uncross_button = Button(button_frame, text="Uncross Item", command=uncross_item)
+
+delete_button.grid(row=0, column=0)
+add_button.grid(row=0, column=1, padx=20)
+cross_off_button.grid(row=0, column=2)
+uncross_button.grid(row=0, column=3, padx=20)
+
 
 root.mainloop()
