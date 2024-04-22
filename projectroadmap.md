@@ -18,4 +18,4 @@ Complete 6 Code Changes
   -  [x] 5 code change
   -  [x] 6 code change
 - [x] each commit has a comment explaining what changed
-- [] Submit quiz
+- [x] Submit quiz
