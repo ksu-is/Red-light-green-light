@@ -7,7 +7,7 @@ root.iconbitmap('c:/gui/Red light, Green light.ico')
 root.geometry("500x500")
 
 #Define our Font
-my_font = Font(family="Baskerville Old Face", size=30, weight="bold")
+my_font = Font(family="Brush Script MT", size=30)
 
 #Create Frame
 my_frame = Frame(root)
