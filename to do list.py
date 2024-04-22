@@ -18,6 +18,9 @@ my_list = Listbox(my_frame, font=my_font, width=25, height=5, bg="SystemButtonFa
 
 my_list.pack()
 
+#Create dummy list
 stuff = ["Walk the dog", "Buy groceries", "Take a nap", "Learn Tkinter"]
-
+#Add dummy list to list box
+for item in stuff:
+    my_list.insert(END, item)
 root.mainloop()
