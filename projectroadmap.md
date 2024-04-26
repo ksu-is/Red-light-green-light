@@ -20,3 +20,14 @@
   -  [x] 6 code change
 - [x] each commit has a comment explaining what changed
 - [x] Submit quiz
+
+## Sprint 3:
+
+- [ ] Continue to make updates and commit messages in repository
+-  Create a powerpoint slide introducing topic includind the following:
+   -  [ ] List project members
+   -  [ ] Title of project
+   -  [ ] Introduce the concept...What is the project about? What is it meant to do?
+   -  [ ] Add 2 screenshots
+- [ ] Submit Sprint 3 quiz
+- [ ] Upload copy of powerpoint to github
