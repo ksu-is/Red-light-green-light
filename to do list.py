@@ -77,6 +77,20 @@ def delete_crossed():
         else:
              count += 1
 
+#Create Menu
+my_menu = Menu(root)
+root.config (menu = my_menu)
+
+#Add items to the menu
+file_menu = Menu(my_menu, tearoff=False)
+my_menu.add_cascade(label="File", menu=file_menu)
+#Add dropdown items
+file_menu.add_command(label="Save List", command=save_list)
+file_menu.add_command(label="Open List", command=open_list)
+file_menu.add_separator()
+file_menu.add_command(label="Clear List", command=clear_list)
+
+
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
 add_button = Button(button_frame, text="Add Item", command=add_item)
