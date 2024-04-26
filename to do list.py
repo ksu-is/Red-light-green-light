@@ -28,16 +28,6 @@ my_list = Listbox(my_frame, font=my_font,
 
 my_list.pack(side=LEFT, fill=BOTH)
 
-# Create dummy list
-stuff = ["Walk the dog",
-          "Buy groceries",
-          "Get an oil change",
-          "Go to the gym"]
-
-# Add dummy list to list box
-for item in stuff:
-    my_list.insert(END, item)
-
 # Create scrollbar
 my_scrollbar = Scrollbar(my_frame)
 my_scrollbar.pack(side=RIGHT, fill=BOTH)
