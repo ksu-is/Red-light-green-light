@@ -45,7 +45,7 @@ my_list.config(yscrollcommand=my_scrollbar.set)
 my_scrollbar.config(command=my_list.yview)
 
 #create entry box to add items to the list
-my_entry = Entry(root, font=("Helvetica", 24))
+my_entry = Entry(root, font=("Helvetica", 24), width= 30)
 my_entry.pack(pady= 20)
 
 #Create a button frame
