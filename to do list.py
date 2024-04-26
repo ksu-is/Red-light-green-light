@@ -77,6 +77,12 @@ def delete_crossed():
         else:
              count += 1
 
+def save_list():
+    pass
+def open_list():
+    pass
+def clear_list():
+    pass
 # Create Menu
 my_menu = Menu(root)
 root.config (menu = my_menu)
