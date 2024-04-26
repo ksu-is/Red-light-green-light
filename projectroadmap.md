@@ -7,6 +7,7 @@
 - [x] Developed a README.md.
 - [x] Developed a projectroadmap.md.
 - [x] Researeched similar epositories within the organization related to the program.
+- [x] Sumbit Sprint 1 quiz
 
 ## Sprint 2:
 
@@ -19,7 +20,7 @@
   -  [x] 5 code change
   -  [x] 6 code change
 - [x] each commit has a comment explaining what changed
-- [x] Submit quiz
+- [x] Submit Sprint 2 quiz
 
 ## Sprint 3:
 
