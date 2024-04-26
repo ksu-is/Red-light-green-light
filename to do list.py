@@ -83,9 +83,10 @@ def open_list():
     pass
 def clear_list():
     pass
+
 # Create Menu
 my_menu = Menu(root)
-root.config (menu = my_menu)
+root.config(menu=my_menu)
 
 # Add items to the menu
 file_menu = Menu(my_menu, tearoff=False)
