@@ -85,7 +85,7 @@ def save_list():
         title="Save File",
         filetypes=(
             ("Dat Files","*.dat"),
-            (All Files,"*.*")))
+            ("All Files","*.*")))
     if file_name:
         if file_name.endswith(".dat"):
             pass
