@@ -45,7 +45,7 @@ button_frame = Frame(root)
 button_frame.pack(pady= 20)
 
 
-# FUNCTIONS
+# Button Functions
 def delete_item():
     my_list.delete(ANCHOR)
 def add_item():
@@ -69,6 +69,7 @@ def delete_crossed():
         else:
              count += 1
 
+# Menu Functions
 def save_list():
     file_name = filedialog.asksaveasfilename(
         initialdir="C:/gui/data",
@@ -98,7 +99,6 @@ def save_list():
 
         # Actaully add stuff to the file
         pickle.dump(stuff, output_file)
-
 def open_list():
     file_name = filedialog.askopenfilename(
         initialdir="C:/gui/data",
@@ -116,7 +116,6 @@ def open_list():
         # Output stuff to screen
         for item in stuff:
             my_list.insert(END, item)
-
 def clear_list():
     my_list.delete(0, END)
 
