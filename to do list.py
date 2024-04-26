@@ -110,7 +110,23 @@ def save_list():
         pickle.dump(stuff, output_file)
 
 def open_list():
-    pass
+    file_name = filedialog.askopenfilename(
+        initialdir="C:/gui/data",
+        title="Open File",
+        filetypes=(
+            ("Dat Files","*.dat"),
+            ("All Files","*.*")))
+    if file_name:
+        # Delete currently open list
+        my_list.delete(0, END)
+        # Open the file
+        input_file = open(file_name, 'rb')
+        # load data from file
+        stuff = pickle.load(input_file)
+        # Output stuff to screen
+        for item in stuff:
+            my_list.insert(END, item)
+
 def clear_list():
     my_list.delete(0, END)
 
