@@ -82,7 +82,7 @@ def save_list():
 def open_list():
     pass
 def clear_list():
-    pass
+    my_list.delete(0, END)
 
 # Create Menu
 my_menu = Menu(root)
