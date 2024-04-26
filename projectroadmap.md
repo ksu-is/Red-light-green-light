@@ -24,7 +24,7 @@
 
 ## Sprint 3:
 
-- [ ] Continue to make updates and commit messages in repository
+- [x] Continue to make updates and commit messages in repository
 -  Create a powerpoint slide introducing topic includind the following:
    -  [ ] List project members
    -  [ ] Title of project
