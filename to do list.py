@@ -16,7 +16,7 @@ my_frame.pack(pady=10)
 #Create listbox
 my_list = Listbox(my_frame, font=my_font,
                  width=30, 
-                 height=5,
+                 height=8,
                  bg="SystemButtonFace",
                  bd=0, 
                  fg="#000000", 
