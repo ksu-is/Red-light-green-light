@@ -74,8 +74,8 @@ def delete_crossed():
     while count < my_list.size():
         if my_list.itemcget(count, "fg") == "#A3A3A3":
             my_list.delete(my_list.index(count))
-
-        count += 1
+        else:
+             count += 1
 
 #Add buttons to frame
 delete_button = Button(button_frame, text="Delete Item", command=delete_item)
