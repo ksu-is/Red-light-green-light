@@ -84,7 +84,7 @@ root.config (menu = my_menu)
 # Add items to the menu
 file_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="File", menu=file_menu)
-#Add dropdown items
+# Add dropdown items
 file_menu.add_command(label="Save List", command=save_list)
 file_menu.add_command(label="Open List", command=open_list)
 file_menu.add_separator()
