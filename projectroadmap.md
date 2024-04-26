@@ -26,9 +26,9 @@
 
 - [x] Continue to make updates and commit messages in repository
 -  Create a powerpoint slide introducing topic includind the following:
-   -  [ ] List project members
-   -  [ ] Title of project
-   -  [ ] Introduce the concept...What is the project about? What is it meant to do?
-   -  [ ] Add 2 screenshots
+   -  [x] List project members
+   -  [x] Title of project
+   -  [x] Introduce the concept...What is the project about? What is it meant to do?
+   -  [x] Add screenshot
 - [ ] Submit Sprint 3 quiz
 - [ ] Upload copy of powerpoint to github
