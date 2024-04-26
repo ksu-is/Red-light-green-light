@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter.font import Font
+from tkinter import filedialog
 
 root = Tk()
 root.title('Red light, Green light - Task Manager!')
@@ -78,7 +79,8 @@ def delete_crossed():
              count += 1
 
 def save_list():
-    pass
+    file_name = filedialog.asksaveasfilename(
+        initialdir="C:/gui/data")
 def open_list():
     pass
 def clear_list():
