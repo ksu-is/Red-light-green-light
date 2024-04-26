@@ -84,6 +84,7 @@ cross_off_button = Button(button_frame, text="Cross Off Item", command=cross_off
 uncross_button = Button(button_frame, text="Uncross Item", command=uncross_item)
 delete_crossed_button = Button(button_frame, text="Delete Crossed", command=delete_crossed)
 
+#Add measurements of buttons
 delete_button.grid(row=0, column=0)
 add_button.grid(row=0, column=1, padx=20)
 cross_off_button.grid(row=0, column=2)
