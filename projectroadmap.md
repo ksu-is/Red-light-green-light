@@ -11,7 +11,7 @@
 ## Sprint 2:
 
 - [x] make small updates and commit messages in repository
--Complete 6 Code Changes
+- Complete 6 Code Changes
   -  [x] 1 code change
   -  [x] 2 code change
   -  [x] 3 code change
