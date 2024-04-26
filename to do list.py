@@ -15,7 +15,7 @@ my_frame.pack(pady=10)
 
 #Create listbox
 my_list = Listbox(my_frame, font=my_font,
-                 width=25, 
+                 width=30, 
                  height=5,
                  bg="SystemButtonFace",
                  bd=0, 
@@ -42,7 +42,7 @@ my_scrollbar.config(command=my_list.yview)
 
 #create entry box to add items to the list
 my_entry = Entry(root, font=("Helvetica", 24))
-my_entry.pack(pady=20)
+my_entry.pack(pady= 20)
 
 #Create a button frame
 button_frame = Frame(root)
