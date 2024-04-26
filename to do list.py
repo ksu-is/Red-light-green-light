@@ -139,6 +139,9 @@ add_button = Button(button_frame, text="Add Item", command=add_item)
 cross_off_button = Button(button_frame, text="Cross Off Item", command=cross_off_item)
 uncross_button = Button(button_frame, text="Uncross Item", command=uncross_item)
 delete_crossed_button = Button(button_frame, text="Delete Crossed", command=delete_crossed)
+red_button = Button(button_frame, text="Red Light", command=red_item)
+orange_button = Button(button_frame, text="Orange Light", command=orange_item)
+green_button = Button(button_frame, text="Green Light", command=green_item)
 
 # Add measurements of buttons
 delete_button.grid(row=0, column=0)
@@ -146,5 +149,8 @@ add_button.grid(row=0, column=1, padx=20)
 cross_off_button.grid(row=0, column=2)
 uncross_button.grid(row=0, column=3, padx=20)
 delete_crossed_button.grid(row=1, column=0)
+red_button.grid(row=1, column=1, padx=20)
+orange_button.grid(row=1, column=2)
+green_button.grid(row=1, column=3, padx=20)
 
 root.mainloop()
