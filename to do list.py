@@ -68,6 +68,15 @@ def delete_crossed():
             my_list.delete(my_list.index(count))
         else:
              count += 1
+def red_item():
+    #Cross off item
+    my_list.itemconfig(my_list.curselection(), fg="#FF6A6A")
+def orange_item():
+    #Cross off item
+    my_list.itemconfig(my_list.curselection(), fg="#FFA500")
+def green_item():
+    #Cross off item
+    my_list.itemconfig(my_list.curselection(), fg="#00FF00")
 
 # Menu Functions
 def save_list():
