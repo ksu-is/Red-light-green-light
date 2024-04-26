@@ -30,5 +30,5 @@
    -  [x] Title of project
    -  [x] Introduce the concept...What is the project about? What is it meant to do?
    -  [x] Add screenshot
-- [ ] Submit Sprint 3 quiz
-- [ ] Upload copy of powerpoint to github
+- [x] Submit Sprint 3 slide
+- [x] Upload copy of powerpoint to github
