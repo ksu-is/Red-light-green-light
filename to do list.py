@@ -69,14 +69,20 @@ def delete_crossed():
         else:
              count += 1
 def red_item():
-    #Cross off item
-    my_list.itemconfig(my_list.curselection(), fg="#FF6A6A")
+    #Change color to red
+    my_list.itemconfig(my_list.curselection(), fg="#FF0000")
+    #Get rid of selection bar entry
+    my_list.selection_clear(0,END)
 def orange_item():
-    #Cross off item
+    #Change color to orange
     my_list.itemconfig(my_list.curselection(), fg="#FFA500")
+    #Get rid of selection bar entry
+    my_list.selection_clear(0,END)
 def green_item():
-    #Cross off item
+    #Change color to green
     my_list.itemconfig(my_list.curselection(), fg="#00FF00")
+    #Get rid of selection bar entry
+    my_list.selection_clear(0,END)
 
 # Menu Functions
 def save_list():
